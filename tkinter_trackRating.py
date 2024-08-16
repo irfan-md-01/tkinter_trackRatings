@@ -14,7 +14,8 @@ def submit1(x):
     with open("tkinter_trackRating.csv", 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(data)
-
+        
+    tmsg.showinfo("tkinter", "Thanks for your Rating")
     x.set(5)
 
 root =Tk()
